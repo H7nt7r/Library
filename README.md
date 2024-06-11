@@ -5,6 +5,7 @@
 2. Создание базы данных.
 3. Создание таблиц:
    а. book: CREATE TABLE book ( id BIGINT PRIMARY KEY, isbn VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, genre VARCHAR(255) NOT NULL, description TEXT, author VARCHAR(255) NOT NULL);
+   
    б. library_book: CREATE TABLE library_record ( id BIGINT PRIMARY KEY, book_id BIGINT NOT NULL, borrowed_at TIMESTAMP NOT NULL, due_at TIMESTAMP, returned_at TIMESTAMP, FOREIGN KEY (book_id) REFERENCES book(id) );
 
 Запуск проекта:
