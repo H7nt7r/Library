@@ -15,3 +15,4 @@
 3. Запуск проекта: mvn spring-boot:run
 
 Переход на документацию Swagger UI доступен по следующей ссылке: http://localhost:8080/swagger-ui.html 
+ 
